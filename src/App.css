@@ -1,0 +1,442 @@
+.h-100vh {
+  height: 100vh!important;
+}
+
+.h-70vh {
+  height: 70vh!important;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.mt-20 {
+  margin-top: 20vh;
+}
+p {
+  font-size: 2em;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-decoration-underline {
+  text-decoration: underline;
+}
+
+.header {
+  height: 10vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: self-end;
+}
+
+.time-line {
+  position: fixed;
+  top: 10px;
+  height: 100vh;
+  width: 200px;
+  z-index: 100;
+}
+
+.fadeOut{
+  height:0;
+  transition: all 0.5s;
+}
+
+
+.header > ul {
+  list-style-type : none;
+}
+
+.header > ul > li {
+  display: inline;
+  cursor: pointer;
+}
+
+.logo-img {
+  z-index: 1000;
+  left: 10px;
+  top: 2vh;
+  height: 16vh;
+  cursor: pointer;
+}
+
+.parent {
+  height: 90vh;
+}
+
+.fadeIn{
+  height:100vh;
+  transition: all 0.5s;
+}
+
+@keyframes allFadaOut {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.allFadaOut {
+  z-index: 100;
+  animation-duration: 1s;
+  animation-name: allFadaOut;
+  background-color: black;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes back1 {
+  from {background-position: 0% 100%;}
+  to {background-position: 7% 100%;}
+}
+.back-first {
+  background: url(./imgs/DystopiaLayers/first/1.png);
+  background-size: 120% 120%;
+  background-position: 7% 100%;
+  animation-name: back1;
+  animation-duration: 3s;
+}
+
+@keyframes back1-full {
+  from {background-position: 7% 100%;}
+  to {background-position: 7% 0%;}
+}
+.back-first-full {
+  background: url(./imgs/DystopiaLayers/first/1.png);
+  background-size: 120% 120%;
+  background-position: 7% 0%;
+  animation-name: back1-full;
+  animation-duration: 3s;
+}
+
+@keyframes back2 {
+  from {background-position: 100px 0px;}
+  to {background-position: 0px 0px;}
+}
+.back-second {
+  background: url(./imgs/DystopiaLayers/first/3.png);
+  background-position: 0px 0px;
+  animation-name: back2;
+  animation-duration: 3s;
+  z-index: 1;
+}
+
+@keyframes back2-full {
+  from {background-position: 0px 0px;}
+  to {background-position: 0px -100px;}
+}
+.back-second-full {
+  background: url(./imgs/DystopiaLayers/first/3.png);
+  background-position: 0px -100px;
+  animation-name: back2-full;
+  animation-duration: 3s;
+  z-index: 1;
+}
+
+@keyframes wave {
+  from {background-position: 60% 62%;}
+  to {background-position: 40% 62%;}
+}
+.wave-animation {
+  background: url(./imgs/DystopiaLayers/first/4.png);
+  animation-name: wave;
+  animation-duration: 3s;
+  z-index: 2;
+  background-size: 120% 120%;
+  background-position: 40% 62%;
+  opacity: 0.7;
+}
+
+.back-third {
+  z-index: 3;
+}
+
+.back-sixth {
+  z-index: 4;
+  opacity: 0.7;
+}
+
+@keyframes back7 {
+  from {background-position: -50px 0%;}
+  to {background-position: 0% 0%;}
+}
+.back-seventh {
+  z-index: 5;
+  opacity: 0.7;
+  background: url(./imgs/DystopiaLayers/first/7.png);
+  background-position: 0% 0%;
+  background-size: 100% 100%;
+  animation-name: back7;
+  animation-duration: 3s;
+}
+
+@keyframes person {
+  from {background-position: -200px 200px}
+  to {background-position: 0px 200px}
+}
+.person-animation {  
+  background: url(./imgs/DystopiaLayers/first/8.png);
+  background-size: 100% 100%;
+  background-position: 0px 200px;
+  animation-name: person;
+  animation-duration: 3s;
+  background-repeat: no-repeat;
+  z-index: 6;
+}
+
+@keyframes person-full {
+  from {background-position: 0px 200px}
+  to {background-position: 0px 0px}
+}
+.person-animation-full {
+  background-position: 0px 0px;
+  animation-name: person-full;
+  background: url(./imgs/DystopiaLayers/first/8.png);
+  background-size: 100% 100%;
+  animation-duration: 3s;
+  background-repeat: no-repeat;
+  z-index: 6;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.line-point-animate {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: rgba(255,255,252,0.8);
+  position:absolute;
+  left: calc(9px + 8vh);
+}
+
+.line-w-1 {
+  width: 1px;
+  left: calc(10px + 8vh);
+  top: 18vh;
+  background-color: rgba(255,255,252,0.3);
+  transition: height 0.5;
+}
+
+.stage-point {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: rgba(255,255,252,0.8);
+  position:absolute;
+  left: calc(9px + 8vh);
+  cursor: pointer;
+  transition: all 0.5;
+}
+
+.stage-main-point {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: rgba(255,255,252,0.8);
+  position:absolute;
+  left: calc(8px + 8vh);
+  cursor: pointer;
+  transition: all 0.5;
+}
+
+.stage-detail-page {
+  width: calc(100vw - 20vh);
+  margin: auto;
+  margin-right: 0px;
+  scroll-snap-type: y mandatory;
+}
+
+.stage-skip {
+  text-align: right;
+  width: 90%;
+  margin-top: 50px;
+  color: rgba(255,255,252,0.5);
+  cursor: pointer;
+}
+
+.stage-skip:hover {
+  color: rgba(255,255,252,1);
+}
+
+.phase {
+  height: 300vh;
+}
+
+.phase6 {
+  height: 600vh; 
+}
+
+.phase-container {
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column; */
+  color: rgba(255,255,252,0.8);
+  height: 50vh;
+  position: sticky;
+  top: 20vh;
+}
+.phase-container-6 {
+  top: 10vh;
+}
+
+.frame-text {
+  padding-top: 400px;
+}
+.phase-header {
+  width: 70%;
+  margin: auto;
+}
+
+.phase-header > img {
+  margin-top: 50px;
+  width: 150px;
+  margin: auto;
+  display: inherit;
+}
+.phase-header > h1 {
+  font-size: 4.5em
+}
+.phase-body {
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+  animation-name: allFadaOut;
+  animation-duration: 2s;
+  opacity: 1;
+}
+
+.phase-body > p {
+  text-align: center;
+}
+
+.fadeOutOpacity {
+  background-color: black;
+  transition: all 1s;
+}
+
+.stage1-player {
+  width: 800px;
+  height: 800px;
+  margin-top: -250px!important;
+  margin-bottom: -150px!important;    
+  left: calc(50% - 400px);
+
+  transition: left 2s;
+}
+
+.stage2-player {
+  width: 300px;
+  height: 300px;
+}
+
+.img-card .detail {
+  transform: rotateY(90deg);
+}
+
+.img-card:hover > div{
+  transform: rotateY(90deg);
+  transition: all 0.5s;
+}
+
+.img-card:hover .detail{
+  transform: rotateY(0deg);
+  transition: transform 0.5s;
+  transition-delay: 0.5s;
+}
+
+.dropdown-menu1, .dropdown-menu2, .dropdown-menu3, .dropdown-menu4, .dropdown-menu5, .dropdown-menu6 {
+  display: none;
+}
+
+.show {
+  display: block;
+  transition: all 0.5s;
+}
+
+.dropdown1, .dropdown2, .dropdown3, .dropdown4, .dropdown5, .dropdown6{
+  font-size: 1.5rem;
+  border-bottom: 1px solid white;
+  position: relative;
+}
+
+.dropdown1::after, .dropdown2::after, .dropdown3::after, .dropdown4::after, .dropdown5::after, .dropdown6::after{
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+}
+
+.dropup::after {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  vertical-align: 0.255em;
+  content: "";
+  border-bottom: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-top: 0;
+  border-left: 0.3em solid transparent;
+}
+
+.text-control {
+  width: 50%;
+  margin: auto;
+  border-radius: 18px;
+  background-color: #071e16;
+  outline: none;
+  margin-top: 20px;
+  color: white;
+}
+
+.btn-control {
+  width: 200px;
+  color: white;
+  border-radius: 18px;
+  background-color: #013a25;
+  outline: none;
+  margin-top: 32px;
+}
+
+.btn-control:hover {
+  background-color: #76ebc0;
+}
+
+.carousel-each {
+  width: 100%;
+}
+
+.carousel-container > ul > li {
+  width: 250px!important;
+}
+
+.side-dark {
+  background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, transparent 50%, rgba(0,0,0,0.8) 100%);
+}
+
+.fadeIn-h1 {
+  opacity: 1;
+  animation-name: allFadaOut;
+  animation-duration: 5s;
+}
+
+.stage2-ul {
+  position: absolute;
+  left: 40%;
+  text-align: left;
+  font-size: 1.6rem;
+}
