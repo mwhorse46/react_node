@@ -4,7 +4,7 @@ import Stage2Page from '../pages/stage2';
 import Stage3Page from '../pages/stage3';
 import Stage4Page from '../pages/stage4';
 import Stage5Page from '../pages/stage5';
-import LoginPage from '../pages/login';
+import LoginPage from '../pages/login'
 
 const APP = (props) => {
     return (
